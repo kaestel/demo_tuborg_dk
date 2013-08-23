@@ -31,14 +31,20 @@
 	</script>
 </head>
 
-<body>
+<body class="<?= $body_class ?>">
 
-<div id="page" class="i:page">
+<div id="page">
 
 	<div id="header">
 		<ul class="servicenavigation">
-			<li class="terms"><h4><a href="/betingelser" target="_blank">Betingelser</a></h4></li>
+			<li class="close"><a href="javascript:close();">Luk vindue</a></li>
 		</ul>
 	</div>
 
-	<div id="content" class="<?= $content_class ?>">
+	<div id="navigation">
+		<ul>
+			<li class="front"><h4>Tuborg.dk</h4></li>
+		</ul>
+	</div>
+
+	<div id="content">

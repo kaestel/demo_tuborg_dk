@@ -31,18 +31,7 @@ Util.Objects["tubklub"] = new function() {
 
 		scene._form.submitted = function() {
 			
-			this.Response = function(response) {
-
-				var content = u.qs("#content", response);
-				if(content) {
-					u.qs(".signup", this.scene).innerHTML = content.innerHTML;
-				}
-				else {
-					u.qs(".signup", this.scene).innerHTML = "<p>Unknown error</p>";
-				}
-
-			}
-			u.Request(this, this.action, u.f.getParams(this), this.method);
+			alert("Disabled for demo");
 		}
 
 
