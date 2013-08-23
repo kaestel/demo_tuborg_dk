@@ -1,0 +1,92 @@
+/* ADS */
+#content.ads .scene {}
+
+
+#content.ads .video {background-color: transparent; background-repeat: no-repeat; background-position: top center; margin-bottom: 15px; position: relative; width: 960px; height: 540px;}
+#content.ads .video .play {z-index: 20; position: absolute; left: 50%; top: 50%; margin-left: -100px; margin-top: -77px; width: 200px; height: 34px; padding: 120px 0 0 0; display: block; background: transparent url(/img/bg_play_pause.png) no-repeat top center; font-size: 28px; color: #ffffff; text-transform: uppercase; text-align: center;
+	font-family: "RockwellBold"; font-weight: normal;
+}
+#content.ads .video .player {z-index: 30; position: absolute; width: 960px; height: 540px; background: #000000 url(/img/gx_loader.gif) no-repeat center 370px;}
+
+#content.ads .video .player video {width: 100%; height: 100%;}
+#content.ads .video .player .playpause {position: absolute; left: 50%; top: 50%; margin-left: -56px; margin-top: -56px; width: 112px; height: 112px; background: transparent url(/img/bg_play_pause.png) no-repeat 0 0;}
+#content.ads .video .player.playing .playpause {background-position: 0 -180px;}
+
+
+
+#content.ads .videos {overflow: hidden; margin-left: -15px;}
+#content.ads .videos li {position: relative; margin: 0 0 15px 15px; padding: 0; width: 310px; height: 175px; float: left; text-indent: -9999px; background-color: transparent; background-repeat: no-repeat; background-position: top right; cursor: pointer;}
+
+#content.ads .videos li a {position: absolute; left: 50%; top: 50%; margin-left: -56px; margin-top: -56px; width: 112px; height: 112px; display: block; background: transparent url(/img/bg_play_pause.png) no-repeat top left;}
+#content.ads .videos li.selected a {display: none;}
+
+#content.ads .facebook {text-align: right; font-size: 0; line-height: 0; margin-bottom: 58px; border-bottom: 4px solid #262117;}
+#content.ads .fb_like {overflow: hidden; display: inline-block; width: 51px; height: 35px;}
+
+
+
+/* CLASSIC ADS */
+
+#content.ads .classicsheader {position: absolute; left: 0; top: 840px; width: 310px;}
+#content.ads .classicsheader h2 {font-size: 22px; text-transform: uppercase; line-height: 24px;
+	font-family: "RockwellBold"; font-weight: normal;
+}
+#content.ads .classicsheader h3 {font-size: 64px; text-transform: uppercase; line-height: 56px;
+	font-family: "RockwellBold"; font-weight: normal;
+}
+
+#content.ads .classics {overflow: hidden; position: relative; height: 2450px;}
+#content.ads .classics li {width: 310px; position: absolute; cursor: pointer;}
+#content.ads .classics li a {display: block; text-indent: -9999px; height: 100%;}
+
+/*#content.ads .classics li.movie {position: relative;}*/
+#content.ads .classics li.movie a {position: absolute; left: 50%; top: 50%; margin-left: -56px; margin-top: -56px; width: 112px; height: 112px; background: transparent url(/img/bg_play_pause.png) no-repeat top center;}
+
+#content.ads .classics li.heldigere {left: 0px; top: 189px; background-image: url(/img/adverts/nogle_er_heldigere_small.jpg); height: 440px;}
+#content.ads .classics li.byenstaarne {left: 0px; top: 644px; background-image: url(/img/adverts/byens_taarne_small.jpg); height: 418px;}
+#content.ads .classics li.toerstigemand {left: 0px; top: 1077px; background-image: url(/img/adverts/den_toerstige_mand_small.jpg); height: 418px;}
+#content.ads .classics li.classicoplukker {left: 0px; top: 1510px; background-image: url(/img/adverts/classic_oplukker_small.jpg); height: 453px;}
+#content.ads .classics li.unplugged {left: 0px; top: 1978px; background-image: url(/img/adverts/unplugged_small.jpg); height: 418px;}
+
+
+#content.ads .classics li.asta {left: 325px; top: 0px; background-image: url(/img/adverts/classic_asta_small.jpg); height: 453px;}
+#content.ads .classics li.sejl {left: 325px; top: 468px; background-image: url(/img/adverts/sejl_oplukker_small.jpg); height: 451px;}
+#content.ads .classics li.julebryg {left: 325px; top: 934px; background-image: url(/img/adverts/julebryg_small.jpg); height: 440px;}
+#content.ads .classics li.backstage {left: 325px; top: 1389px; background-image: url(/img/adverts/backstage_small.jpg); height: 418px;}
+#content.ads .classics li.groenkoncert {left: 325px; top: 1822px; background-image: url(/img/adverts/groen_koncert_small.jpg); height: 437px;}
+
+
+#content.ads .classics li.julebrygfilm {left: 650px; top: 0px; background-image: url(/img/adverts/julebryg_film_small.jpg); height: 174px;}
+#content.ads .classics li.julebrygfilm .player {width: 640px; height: 468px;}
+
+#content.ads .classics li.trae {left: 650px; top: 189px; background-image: url(/img/adverts/groen_trae_small.jpg); height: 418px;}
+#content.ads .classics li.guld1999 {left: 650px; top: 622px; background-image: url(/img/adverts/guld_1999_small.jpg); height: 456px;}
+#content.ads .classics li.udsolgt {left: 650px; top: 1093px; background-image: url(/img/adverts/udsolgt79_small.jpg); height: 418px;}
+#content.ads .classics li.tyvstart {left: 650px; top: 1526px; background-image: url(/img/adverts/tyvstart_1987_small.jpg); height: 418px;}
+#content.ads .classics li.groen50 {left: 650px; top: 1959px; background-image: url(/img/adverts/groen_50_small.jpg); height: 418px;}
+
+body.fullscreen {}
+#fullscreen {position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; z-index: 5; display: none; opacity: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+#fullscreen .ad {width: 100%; height: 100%; background-repeat: no-repeat; background-position: center center;}
+
+#fullscreen .prev {position: absolute; opacity: 0; width: 150px; height: 20px; top: 50%; margin-top: -100px; z-index: 100; background: transparent url(/img/bg_bn_carousel.png) no-repeat right center; padding: 90px 50px 90px 0; overflow: hidden; cursor: pointer;}
+#fullscreen .prev span {display: block; width: 150px; text-align: center; text-transform: uppercase;
+	font-family: "RockwellBold"; font-weight: normal; line-height: 18px;
+}
+#fullscreen .next {position: absolute; opacity: 0; width: 150px; height: 20px; top: 50%; margin-top: -100px; z-index: 100; background: transparent url(/img/bg_bn_carousel.png) no-repeat left center; padding: 90px 0 90px 50px; overflow: hidden; cursor: pointer;}
+#fullscreen .next span {display: block; width: 150px; text-align: center; text-transform: uppercase;
+	font-family: "RockwellBold"; font-weight: normal; line-height: 18px;
+}
+#fullscreen .zoom {z-index: 120; background: transparent url(/img/bg_bn_close.png) no-repeat 0 30px; width: 74px; height: 74px; cursor: pointer; position: absolute; right: 0; top: 0;}
+
+
+#fullscreen .ad .play {z-index: 20; position: absolute; left: 50%; top: 50%; margin-left: -100px; margin-top: -77px; width: 200px; height: 34px; padding: 120px 0 0 0; display: block; background: transparent url(/img/bg_play_pause.png) no-repeat top center; font-size: 28px; color: #ffffff; text-transform: uppercase; text-align: center; cursor: pointer;
+	font-family: "RockwellBold"; font-weight: normal;
+}
+#fullscreen .ad .player {z-index: 30; position: absolute; width: 960px; height: 540px; background: #000000 url(/img/gx_loader.gif) no-repeat center 370px;}
+
+#fullscreen .ad .player video {width: 100%; height: 100%;}
+#fullscreen .ad .player .playpause {position: absolute; left: 50%; top: 50%; margin-left: -56px; margin-top: -56px; width: 112px; height: 112px; background: transparent url(/img/bg_play_pause.png) no-repeat 0 0;}
+#fullscreen .ad .player.playing .playpause {background-position: 0 -180px;}

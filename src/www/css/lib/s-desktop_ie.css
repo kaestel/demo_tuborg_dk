@@ -1,0 +1,39 @@
+#page {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+#content {position: relative; overflow: hidden; z-index: 1;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+#content .scene .prev {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+#content .scene .next {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+#content.about .readmore a {padding: 7px 15px 5px;}
+
+#content.beers .scene .beer .sponsorshiptext h3 {padding-top: 5px;}
+
+
+#content.beers .scene .beer .sponsorships .sponsorship .close {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+#fullscreen .prev {padding: 12px 50px 168px 0; margin-top: 0; background-position: right top;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+#fullscreen .next {padding: 12px 0 168px 50px; margin-top: 0; background-position: left top;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+
+.cookie #page,
+.terms #page {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+}
+.cookie #content,
+.terms #content {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+}

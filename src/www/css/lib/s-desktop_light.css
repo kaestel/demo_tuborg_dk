@@ -1,0 +1,56 @@
+#page {
+	opacity: 0;
+	visibility: hidden\9;
+}
+#content {position: relative; overflow: hidden; z-index: 1;
+	opacity: 0;
+	visibility: hidden\9;
+}
+
+
+#content .scene .prev {
+	opacity: 0;
+	visibility: hidden\9;
+}
+#content .scene .next {
+	opacity: 0;
+	visibility: hidden\9;
+}
+
+#content.about .readmore a {padding: 7px 15px 5px;}
+
+#content.beers .scene .beer .sponsorshiptext h3 {padding-top: 5px;}
+
+#content.stories ul.bullets li,
+#content.beers .scene .beers li,
+#content.beers .scene .beer .sponsorships .sponsorship,
+#content.front .scene .beers,
+#content.front .scene .campaign,
+#navigation ul {*zoom: 1; *display: inline;}
+
+#content.beers .scene .beer .sponsorships .sponsorship .close {
+	opacity: 0;
+	visibility: hidden\9;
+}
+
+#fullscreen .prev {padding: 12px 50px 168px 0; margin-top: 0; background-position: right top;
+	opacity: 0;
+	visibility: hidden\9;
+}
+#fullscreen .next {padding: 12px 0 168px 50px; margin-top: 0; background-position: left top;
+	opacity: 0;
+	visibility: hidden\9;
+}
+
+
+.cookie #page,
+.terms #page {
+	opacity: 1;
+	visibility: visible\9;
+}
+
+.cookie #content,
+.terms #content {
+	opacity: 1;
+	visibility: visible\9;
+}

@@ -1,0 +1,35 @@
+#navigation {height: 92px; position: relative; text-align: right; margin: 0 auto; width: 960px;}
+#navigation ul {overflow: hidden; display: inline-block; text-align: left;}
+#navigation li {float: left; padding: 38px 9px; cursor: pointer;}
+#navigation li a {height: 16px; display: block; overflow: hidden; text-indent: -9999px; background: transparent url(/img/bg_navigation.png) no-repeat 0 100px;}
+
+#navigation li.selected a {color: #adacac; text-decoration: none;}
+#navigation li a:hover {color: #00a261; text-decoration: none;}
+
+#navigation li.front {position: absolute; left: 0; top: 0; float: none; padding: 15px 0;}
+#navigation li.front a {background: transparent url(/img/bg_logo.png) no-repeat 0 2px; width: 134px; padding: 23px 0;}
+
+#navigation li.beers a {background-position: 0 0; width: 29px;}
+#navigation li.beers.selected a {background-position: 0 -25px; width: 29px;}
+#navigation li.beers:hover a {background-position: 0 -50px; width: 29px;}
+
+#navigation li.stories a {background-position: -45px 0; width: 137px;}
+#navigation li.stories.selected a {background-position: -45px -25px; width: 137px;}
+#navigation li.stories:hover a {background-position: -45px -50px; width: 137px;}
+
+
+#navigation li.ads a {background-position: -198px 0; width: 142px;}
+#navigation li.ads.selected a {background-position: -198px -25px; width: 142px;}
+#navigation li.ads:hover a {background-position: -198px -50px; width: 142px;}
+
+#navigation li.tubklub a {background-position: -356px 0; width: 93px;}
+#navigation li.tubklub.selected a {background-position: -356px -25px; width: 93px;}
+#navigation li.tubklub:hover a {background-position: -356px -50px; width: 93px;}
+
+#navigation li.about a {background-position: -465px 0; width: 127px;}
+#navigation li.about.selected a {background-position: -465px -25px; width: 127px;}
+#navigation li.about:hover a {background-position: -465px -50px; width: 127px;}
+
+#navigation li.facebook {padding: 38px 0 38px 9px;}
+#navigation li.facebook a {width: 16px; background: transparent url(/img/bg_icons.png) no-repeat 0 -100px;}
+#navigation li.facebook.selected a {background-position: -50px -100px;}

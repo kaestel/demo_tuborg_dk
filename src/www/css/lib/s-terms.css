@@ -1,0 +1,16 @@
+.terms #page {opacity: 1;}
+
+.terms #header .servicenavigation .close {z-index: 120; background: transparent url(/img/bg_bn_close.png) no-repeat 0 30px; width: 74px; height: 74px; cursor: pointer; position: absolute; right: 0; top: 0;}
+.terms #header .servicenavigation .close a {height: 74px; display: block; text-indent: -9999px;}
+
+.terms #navigation li.front {width: 134px; text-indent: -9999px; background: transparent url(/img/bg_logo.png) no-repeat -1px 18px; height: 92px;}
+.terms #content {opacity: 1;}
+
+
+.terms #content h1 {font-size: 22px; line-height: 25px; padding: 68px 0 40px 35px; text-transform: uppercase; overflow: hidden;
+	font-family: "RockwellBold"; font-weight: normal;
+}
+.terms #content h2 {padding: 0 0 10px 35px; font-size: 18px;}
+.terms #content h3 {padding: 0 0 10px 35px; font-size: 14px;}
+.terms #content p {line-height: 18px; font-size: 14px; padding: 0 0 10px 35px;}
+.terms #content a {text-decoration: underline;}

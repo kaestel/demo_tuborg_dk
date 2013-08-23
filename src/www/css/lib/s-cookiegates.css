@@ -1,0 +1,57 @@
+body.cookie {height: 100%;}
+.cookie #page {opacity: 1; background: transparent url(/img/bg_horizon.png) repeat-x 0px 120px;}
+.cookie #navigation li.front {width: 134px; text-indent: -9999px; background: transparent url(/img/bg_logo.png) no-repeat -1px 18px; height: 92px;}
+.cookie #content {opacity: 1;}
+
+.cookie #content .scene {margin: 0 auto; width: 960px; position: relative; text-align: center; height: 494px;}
+
+.cookie #content .scene .actions {text-align: center; display: block; background: transparent url(/img/bg_dot.png) no-repeat center 14px;}
+.cookie #content .scene .actions li {display: inline-block; margin: 0 29px; width: 68px; height: 38px; background: transparent url(/img/bg_bn.png) no-repeat top left;}
+.cookie #content .scene .actions li a {display: block; height: 18px; padding: 10px 0; overflow: hidden; color: #ffffff; text-transform: uppercase;
+	font-family: "RockwellBold"; font-weight: normal; line-height: 18px;
+}
+.cookie #content .scene .actions li a:hover {text-decoration: none;}
+
+.cookie #content .scene.agecheck {text-align: left;}
+.cookie #content .scene.agecheck h1 {padding: 253px 0 13px 285px; height: 38px; overflow: hidden; text-transform: uppercase; font-weight: normal; font-size: 38px; line-height: 40px;
+	font-family: "RockwellBold"; 
+}
+.cookie #content .scene.agecheck form {padding: 0 0 0 285px; font-size: 0;}
+.cookie #content .scene.agecheck h2 {font-size: 14px; font-weight: normal; padding: 0 0 9px;}
+.cookie #content .scene.agecheck h2 span {display: none;}
+.cookie #content .scene.agecheck h2.underage {display: none;}
+.cookie #content .scene.agecheck form.error h2 {color: #e60405;}
+.cookie #content .scene.agecheck form.error h2 span {display: inline; color: #e60405;}
+.cookie #content .scene.agecheck form.underage h2 {display: none; color: #e60405;}
+.cookie #content .scene.agecheck form.underage h2.underage {display: block;}
+
+.cookie #content .scene.agecheck fieldset {font-size: 0; display: inline-block; vertical-align: top;}
+
+.cookie #content .scene.agecheck .field {display: inline-block; vertical-align: top; padding: 0 9px 0 0;}
+.cookie #content .scene.agecheck .field label {display: none;}
+.cookie #content .scene.agecheck .field input {border: 1px solid #969797; border-radius: 3px; height: 20px; width: 50px; padding: 0 3px;
+	box-shadow: inset 0 2px 2px 0px #cccccc;
+}
+.cookie #content .scene.agecheck .field.error input,
+.cookie #content .scene.agecheck form.underage .field.error input {border-color: #e60405; color: #e60405;}
+
+
+
+.cookie #content .scene.agecheck .actions {display: inline-block; vertical-align: top; padding: 0;}
+.cookie #content .scene.agecheck .actions li.continue {margin: 0; height: 22px; width: auto; border-radius: 3px; background: #00a261;}
+.cookie #content .scene.agecheck .actions li.continue:hover {background: #000000;}
+.cookie #content .scene.agecheck form.error .actions li.continue,
+.cookie #content .scene.agecheck form.underage .actions li.continue,
+.cookie #content .scene.agecheck form.error .actions li.continue:hover
+.cookie #content .scene.agecheck form.underage .actions li.continue:hover {background-color: #a7a7a7;}
+
+.cookie #content .scene.agecheck .actions li.continue input {margin: 0; padding: 0 12px; border: none; text-transform: uppercase; background: transparent; color: #ffffff; font-size: 12px; font-weight: normal; cursor: pointer;
+	font-family: "RockwellBold";
+}
+
+
+.cookie #content .scene.cookiecheck h1 {padding: 185px 150px 30px; height: 58px; overflow: hidden; text-transform: uppercase;
+	font-family: "RockwellBold"; font-weight: normal; font-size: 38px; line-height: 40px;
+}
+.cookie #content .scene.cookiecheck p {padding: 0px 150px 30px; height: 18px; overflow: hidden;}
+.cookie #content .scene.cookiecheck p a {text-decoration: underline;}

@@ -1,0 +1,22 @@
+#page {opacity: 0;}
+#header {}
+#footer {height: 15px;}
+
+#content {opacity: 0;}
+
+#content .mask {width: 100%;}
+#content .scene {z-index: 1; margin: 0 auto; width: 960px; position: relative; text-align: left;}
+
+
+#content .scene .prev {position: absolute; opacity: 0; width: 150px; height: 20px; top: 170px; z-index: 100; background: transparent url(/img/bg_bn_carousel.png) no-repeat right center; padding: 90px 50px 90px 0; overflow: hidden; cursor: pointer;
+	-webkit-transform: translate3d(0,0,0);
+}
+#content .scene .prev span {display: block; width: 150px; text-align: center; text-transform: uppercase;
+	font-family: "RockwellBold"; font-weight: normal; line-height: 18px;
+}
+#content .scene .next {position: absolute; opacity: 0; width: 150px; height: 20px; top: 170px; z-index: 100; background: transparent url(/img/bg_bn_carousel.png) no-repeat left center; padding: 90px 0 90px 50px; overflow: hidden; cursor: pointer;
+	-webkit-transform: translate3d(0,0,0);
+}
+#content .scene .next span {display: block; width: 150px; text-align: center; text-transform: uppercase;
+	font-family: "RockwellBold"; font-weight: normal; line-height: 18px;
+}

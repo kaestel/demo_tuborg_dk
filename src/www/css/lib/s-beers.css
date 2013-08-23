@@ -1,0 +1,145 @@
+
+#content.beers .mask {background: transparent url(/img/bg_horizon.png) repeat-x 0px -40px;}
+#content.beers .scene {
+/*	background: transparent url(/img/dummy/test_beers.jpg) no-repeat top left;*/
+}
+
+#content.beers .scene .beer {width: 960px; height: 540px; position: relative; z-index: 10;}
+
+#content.beers .scene .beer .sponsorshiptext {position: absolute; left: 611px; top: 655px; width: 349px;
+	top: 320px;
+}
+
+#content.beers .scene .beer .sponsorshiptext h3 {font-size: 17px; line-height: 16px; padding: 0 0 2px; text-transform: uppercase;
+	font-family: "RockwellBold"; font-weight: normal;
+}
+#content.beers .scene .beer .main .sponsorshiptext .description {padding-left: 0;}
+#content.beers .scene .beer .main .sponsorshiptext .description p {font-size: 14px;}
+
+#content.beers .scene .beer .slides {z-index: 10; height: 540px; width: 960px; position: relative;}
+#content.beers .scene .beer .slides li {z-index: 1; height: 540px; width: 960px; position: absolute; top: 0; left: 0;}
+#content.beers .scene .beer .slides .main {}
+
+#content.beers .scene .beer .slides h1 {font-size: 22px; line-height: 25px; height: 25px; padding: 68px 0 0px 35px; width: 370px; text-transform: uppercase; overflow: hidden;
+	font-family: "RockwellBold"; font-weight: normal;
+}
+#content.beers .scene .beer .slides h2 {font-size: 60px; line-height: 60px; padding: 0 0 25px 35px; width: 370px; text-transform: uppercase;
+	font-family: "RockwellBold"; font-weight: normal;
+}
+#content.beers .scene .beer .slides .info {background: transparent url(/img/bg_icons.png) no-repeat 35px -50px; padding: 0 0 25px 35px; width: 30px; height: 24px; float: left; cursor: pointer;}
+#content.beers .scene .beer .slides .facebook {padding: 0 0 0 6px; position: absolute; bottom: 45px; left: 30px; overflow: hidden; width: 55px;}
+
+#content.beers .scene .beer .slides .description {clear: both; overflow: hidden; width: 320px; padding: 0 0 0 35px; overflow: hidden;}
+#content.beers .scene .beer .slides .description p {padding: 0 0 10px 0;}
+#content.beers .scene .beer .slides .description p a {text-decoration: underline;}
+#content.beers .scene .beer .slides .sponsorship {background-repeat: no-repeat; background-position: left -80px; background-color: transparent;}
+#content.beers .scene .beer .slides .sponsorship.spillesteder {background-image: url(/img/sponsorships/bg_spillesteder.png);}
+#content.beers .scene .beer .slides .sponsorship.festivaller {background-image: url(/img/sponsorships/bg_festivaller.png);}
+#content.beers .scene .beer .slides .sponsorship.groenkoncert {background-image: url(/img/sponsorships/bg_groenkoncert.png);}
+#content.beers .scene .beer .slides .sponsorship.roskildefestival {background-image: url(/img/sponsorships/bg_roskildefestival.png);}
+#content.beers .scene .beer .slides .sponsorship.copenhagenjazz {background-image: url(/img/sponsorships/bg_copenhagenjazz.png);}
+#content.beers .scene .beer .slides .sponsorship.aarhusfestuge {background-image: url(/img/sponsorships/bg_aarhusfestuge.png);}
+#content.beers .scene .beer .slides .sponsorship.mcsfightnight {background-image: url(/img/sponsorships/bg_mcsfightnight.png);}
+#content.beers .scene .beer .slides .sponsorship.copenhell {background-image: url(/img/sponsorships/bg_copenhell.png);}
+#content.beers .scene .beer .slides .sponsorship.distortion {background-image: url(/img/sponsorships/bg_distortion.png);}
+#content.beers .scene .beer .slides .sponsorship.tuborgsfoedselsdag {background-image: url(/img/sponsorships/bg_tuborgsfoedselsdag.png);}
+#content.beers .scene .beer .slides .sponsorship.jdag {background-image: url(/img/sponsorships/bg_jdag.png);}
+#content.beers .scene .beer .slides .sponsorship.sommer {background-image: url(/img/sponsorships/bg_sommer.png);}
+
+#content.beers .scene .beer .slides .sponsorship .actions {clear: both; padding: 20px 0 0 35px;}
+#content.beers .scene .beer .slides .sponsorship .actions li {position: static; width: auto; height: auto;}
+#content.beers .scene .beer .slides .sponsorship .actions li a {color: #ffffff; background-color: #1f1b13; padding: 6px 15px; border-radius: 3px; font-size: 14px; text-transform: uppercase;
+	font-family: "RockwellRegular"; font-weight: normal;
+}
+#content.beers .scene .beer .slides .sponsorship .actions li a:hover {text-decoration: none; color: #00a261;}
+
+
+#content.beers .scene .beer .sponsorships {z-index: 40; position: absolute; left: 595px; top: 370px; font-size: 0; width: 360px;}
+#content.beers .scene .beer .sponsorships .sponsorship {display: inline-block; width: 73px; height: 160px; vertical-align: top; cursor: pointer; margin: 0 0 0 11px; position: relative;}
+
+#content.beers .scene .beer .sponsorships .sponsorship .top {
+	position: absolute; top: 15px; left: 0; height: 101px; width: 73px;
+	background-image: url(/img/sponsorships/bg_sponsorships.png); background-repeat: no-repeat; background-color: transparent; 
+}
+#content.beers .scene .beer .sponsorships .sponsorship .bottom {
+	position: absolute; top: 116px; left: 0; height: 22px; width: 73px;
+	background-image: url(/img/sponsorships/bg_sponsorships.png); background-repeat: no-repeat; background-color: transparent; 
+}
+
+#content.beers .scene .beer .sponsorships .sponsorship.roskildefestival .top {background-position: 0 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.groenkoncert .top {background-position: -100px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.spillesteder .top {background-position: -300px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.festivaller .top {background-position: -200px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.distortion .top {background-position: -400px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.copenhell .top {background-position: -400px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.mcsfightnight .top {background-position: -500px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.copenhagenjazz .top {background-position: -600px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.aarhusfestuge .top {background-position: -700px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.tuborgsfoedselsdag .top {background-position: -800px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.jdag .top {background-position: -900px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.sommer .top {background-position: -1000px 0;}
+
+#content.beers .scene .beer .sponsorships .sponsorship.roskildefestival .bottom {background-position: 0 -124px;}
+#content.beers .scene .beer .sponsorships .sponsorship.groenkoncert .bottom {background-position: -100px -124px;}
+#content.beers .scene .beer .sponsorships .sponsorship.spillesteder .bottom {background-position: -300px -124px;}
+#content.beers .scene .beer .sponsorships .sponsorship.festivaller .bottom {background-position: -200px -124px;}
+#content.beers .scene .beer .sponsorships .sponsorship.distortion .bottom {background-position: -400px -124px;}
+#content.beers .scene .beer .sponsorships .sponsorship.copenhell .bottom {background-position: -400px -124px;}
+#content.beers .scene .beer .sponsorships .sponsorship.mcsfightnight .bottom {background-position: -500px -124px;}
+#content.beers .scene .beer .sponsorships .sponsorship.copenhagenjazz .bottom {background-position: -600px -124px;}
+#content.beers .scene .beer .sponsorships .sponsorship.aarhusfestuge .bottom {background-position: -700px -124px;}
+#content.beers .scene .beer .sponsorships .sponsorship.tuborgsfoedselsdag .bottom {background-position: -800px -124px;}
+#content.beers .scene .beer .sponsorships .sponsorship.jdag .bottom {background-position: -900px -124px;}
+#content.beers .scene .beer .sponsorships .sponsorship.sommer .bottom {background-position: -1000px -124px;}
+
+
+#content.beers .scene .beer .sponsorships .sponsorship .close {opacity: 0; position: absolute; top: 0; right: 0; height: 15px; width: 15px; background-image: url(/img/sponsorships/bg_sponsorships_close.png); background-repeat: no-repeat; background-color: transparent;}
+
+#content.beers .scene .beer .sponsorships .sponsorship.roskildefestival .close {background-position: 0 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.groenkoncert .close {background-position: -100px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.spillesteder .close {background-position: -300px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.festivaller .close {background-position: -200px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.distortion .close {background-position: -400px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.copenhell .close {background-position: -400px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.mcsfightnight .close {background-position: -500px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.copenhagenjazz .close {background-position: -600px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.aarhusfestuge .close {background-position: -700px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.tuborgsfoedselsdag .close {background-position: -800px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.jdag .close {background-position: -900px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.sommer .close {background-position: -1000px 0;}
+
+
+#content.beers .scene .beer .bottle {z-index: 50; position: absolute; background-position: center top; background-repeat: no-repeat; background-color: transparent;
+	width: 180px; height: 525px; 
+	left: 384px; top: 0px;
+}
+
+#content.beers .scene .beer .sponsorship_bottle {z-index: 55; position: absolute; background-position: center top; background-repeat: no-repeat; background-color: transparent;
+	width: 180px; height: 525px; 
+	left: 384px; top: 0px;
+}
+
+
+#content.beers .scene .beers {z-index: 60; position: fixed; left: 0; bottom: 0; width: 100%; height: 5px; background: transparent url(/img/bg_beers_crown.png) no-repeat center 10px; padding: 38px 0 0 0; overflow: hidden; cursor: pointer;}
+#content.beers .scene .beers ul {width: 100%; overflow: hidden; margin: 0 auto; background: #1f1b13; text-align: center; font-size: 0; padding: 25px 0 0 0;}
+#content.beers .scene .beers li {width: 100px; height: 23px; padding: 80px 0 0; display: inline-block; cursor: pointer; background-repeat: no-repeat; background-color: transparent; background-image: url(/img/bg_beers_small.png); background-position: center 4px; vertical-align: top;}
+
+#content.beers .scene .beers li a {color: #e7e7e7; text-decoration: none; text-transform: uppercase; font-size: 11px;
+	font-family: "RockwellRegular"; font-weight: normal;
+}
+#content.beers .scene .beers li:hover a {color: #00a261;}
+#content.beers .scene .beers li.selected a {color: #adacac;}
+
+
+#content.beers .scene .beers li.roedtuborg {background-position: center 4px;}
+#content.beers .scene .beers li.guldtuborg {background-position: center -96px;}
+#content.beers .scene .beers li.paaskebryg {background-position: center -196px;}
+#content.beers .scene .beers li.ff {background-position: center -296px;}
+#content.beers .scene .beers li.groentuborg {background-position: center -396px;}
+#content.beers .scene .beers li.julebryg {background-position: center -496px;}
+#content.beers .scene .beers li.classic {background-position: center -596px;}
+#content.beers .scene .beers li.superlight {background-position: center -696px;}
+#content.beers .scene .beers li.lime {background-position: center -796px;}
+
+#content.beers .scene .beers li.sommer {background-position: center -896px;}
+#content.beers .scene .beers li.ultra {background-position: center -996px;}

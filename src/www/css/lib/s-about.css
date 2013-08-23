@@ -1,0 +1,36 @@
+
+/* ABOUT */
+#content.about .mask {background: transparent url(/img/bg_horizon.png) repeat-x 0px 40px;}
+#content.about .abouttuborg {height: 547px; background: transparent url(/img/bg_about.png) no-repeat 416px 92px; padding: 93px 0 90px;}
+#content.about .abouttuborg h1 {height: 106px; background: transparent url(/img/hd_danskernes.png) no-repeat 0 32px; overflow: hidden; text-indent: -9999px;}
+#content.about .abouttuborg p {width: 333px; padding-bottom: 32px;}
+#content.about .readmore a {color: #ffffff; background-color: #1f1b13; padding: 6px 15px; border-radius: 3px; font-size: 14px; text-transform: uppercase; font-family: "RockwellRegular";}
+#content.about .readmore a:hover {text-decoration: none; color: #00a261;}
+#content.about .fondet {height: 473px; background: transparent url(/img/bg_about_fondet.png) no-repeat 0px 0px;}
+#content.about .fondet h2 {height: 102px; background: transparent url(/img/hd_tuborgfondet.png) no-repeat 39px 60px; overflow: hidden; text-indent: -9999px;}
+#content.about .fondet p {width: 410px; padding-bottom: 32px; color: #ffffff; padding-left: 34px;}
+#content.about .fondet .readmore,
+#content.about .fondet p {padding-left: 39px;}
+
+/*#content.about h3.hd_contact {height: 42px; background: transparent url(/img/hd_contact.png) no-repeat 0 0; overflow: hidden; text-indent: -9999px;}
+#content.about .jobs h3 {height: 42px; background: transparent url(/img/hd_jobs.png) no-repeat 0 0; overflow: hidden; text-indent: -9999px;}
+
+#content.about h4.hd_marketing {height: 20px; background: transparent url(/img/hd_marketing.png) no-repeat 0 0; overflow: hidden; text-indent: -9999px;}
+#content.about h4.hd_customerservice {height: 20px; background: transparent url(/img/hd_customerservice.png) no-repeat 0 0; overflow: hidden; text-indent: -9999px;}
+*/
+
+#content.about .address {float: left; width: 300px;}
+#content.about .address .country-name {display: none;}
+#content.about .address .tel,
+#content.about .address .fax {display: inline;}
+#content.about .contact,
+#content.about .jobs {padding-bottom: 95px;}
+#content.about .contact {width: 652px; display: inline-block; float: left; padding-left: 40px;}
+#content.about .contact * {font-family: "RockwellRegular";}
+#content.about .contact h3,
+#content.about .jobs h3 {font-size: 21px; padding-bottom: 18px; text-transform: uppercase;
+	font-family: "RockwellBold"; font-weight: normal;
+}
+#content.about .jobs {width: 248px; display: inline-block; padding-right: 20px;}
+#content.about .jobs p {padding-bottom: 32px; font-family: "RockwellRegular";}
+/* ABOUT END */

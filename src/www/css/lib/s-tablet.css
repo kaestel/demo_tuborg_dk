@@ -1,0 +1,21 @@
+
+#content.tubklub .signup form .field.string input {
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+
+#content.stories .stories li {
+	-moz-user-select: -moz-none;
+	-webkit-user-select: none;
+}
+
+#content.front .scene .beer {
+	-moz-user-select: -moz-none;
+	-webkit-user-select: none;
+}
+
+#fullscreen {
+	-moz-user-select: -moz-none;
+	-webkit-user-select: none;
+}
+

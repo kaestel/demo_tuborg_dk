@@ -1,0 +1,12 @@
+#content.facebook .scene {background: transparent url(/img/bg_tubklub_fb.png) no-repeat 0px 35px; overflow: hidden;}
+#content.facebook .pages {overflow: hidden; padding: 35px 0 0 320px;}
+#content.facebook .pages li {float: right; width: 320px; height: 350px;}
+#content.facebook .pages li h3 a {display: block; width: 100px; height: 88px; text-indent: -9999px; background-repeat: none; background-image: url(/img/bg_beers_facebook.png); background-color: transparent;}
+#content.facebook .pages li .iframe {background: white; height: 215px; width: 292px;}
+
+#content.facebook .pages li.tuborg h3 a {background-position: -100px 0;}
+#content.facebook .pages li.classic h3 a {background-position: 0px 0;}
+#content.facebook .pages li.guld h3 a {background-position: -200px 0;}
+#content.facebook .pages li.jylebryg h3 a {background-position: -300px 0;}
+#content.facebook .pages li.paaske h3 a {background-position: -400px 0;}
+#content.facebook .pages li.ultra h3 a {background-position: -500px 0;}

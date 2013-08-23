@@ -1,0 +1,525 @@
+
+/*s-fonts.css*/
+@font-face {
+	font-family: 'RockwellRegular';
+	src: url('/css/fonts/rockwell-webfont.woff') format('woff'),
+		 url('/css/fonts/rockwell-webfont.ttf') format('truetype'),
+		 url('/css/fonts/rockwell-webfont.svg#RockwellRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'RockwellBold';
+	src: url('/css/fonts/rockwell_bold-webfont.woff') format('woff'),
+		 url('/css/fonts/rockwell_bold-webfont.ttf') format('truetype'),
+		 url('/css/fonts/rockwell_bold-webfont.svg#RockwellBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/*s-page.css*/
+* {font-family: Tahoma, Geneva, sans-serif; font-size: 14px; line-height: 18px; color: #1f1b13;
+	-webkit-font-smoothing: antialiased;
+}
+html {height: 100%; overflow-y : scroll;}
+body {background: #e7e7e7 url(/img/bg_tile.png) repeat top left; margin: 0;}
+h1, h2, h3, h4, h5, h6, p, ul, li, dl, dd, dt, address {padding: 0; margin: 0;}
+ul {list-style: none;}
+a {text-decoration: none; cursor: pointer;}
+a:hover {text-decoration: underline; color: black;}
+img {border: 0; display: block;}
+form, fieldset, label, input, select, textarea {padding: 0; margin: 0; font-weight: normal;}
+fieldset {border: none;}
+input, select, textarea {font-size: 14px;}
+input, textarea {outline: none;}
+#page {position: relative; text-align: left; height: 100%; min-height: 100%; overflow: hidden;}
+
+
+/*s-header.css*/
+#header {position: relative; width: 960px; margin: 0 auto; z-index: 50;}
+#header .servicenavigation {position: absolute; top: 0; right: 0; z-index: 100;}
+#header .servicenavigation li.terms {background: transparent; padding: 3px 0 5px;}
+#header .servicenavigation li.terms h4 {line-height: 10px;}
+#header .servicenavigation li.terms a {color: #a7a7a7; font-size: 10px; font-weight: normal; line-height: 10px; text-decoration: underline;}
+
+/*s-navigation.css*/
+#navigation {height: 92px; position: relative; text-align: right; margin: 0 auto; width: 960px;}
+#navigation ul {overflow: hidden; display: inline-block; text-align: left;}
+#navigation li {float: left; padding: 38px 9px; cursor: pointer;}
+#navigation li a {height: 16px; display: block; overflow: hidden; text-indent: -9999px; background: transparent url(/img/bg_navigation.png) no-repeat 0 100px;}
+#navigation li.selected a {color: #adacac; text-decoration: none;}
+#navigation li a:hover {color: #00a261; text-decoration: none;}
+#navigation li.front {position: absolute; left: 0; top: 0; float: none; padding: 15px 0;}
+#navigation li.front a {background: transparent url(/img/bg_logo.png) no-repeat 0 2px; width: 134px; padding: 23px 0;}
+#navigation li.beers a {background-position: 0 0; width: 29px;}
+#navigation li.beers.selected a {background-position: 0 -25px; width: 29px;}
+#navigation li.beers:hover a {background-position: 0 -50px; width: 29px;}
+#navigation li.stories a {background-position: -45px 0; width: 137px;}
+#navigation li.stories.selected a {background-position: -45px -25px; width: 137px;}
+#navigation li.stories:hover a {background-position: -45px -50px; width: 137px;}
+#navigation li.ads a {background-position: -198px 0; width: 142px;}
+#navigation li.ads.selected a {background-position: -198px -25px; width: 142px;}
+#navigation li.ads:hover a {background-position: -198px -50px; width: 142px;}
+#navigation li.tubklub a {background-position: -356px 0; width: 93px;}
+#navigation li.tubklub.selected a {background-position: -356px -25px; width: 93px;}
+#navigation li.tubklub:hover a {background-position: -356px -50px; width: 93px;}
+#navigation li.about a {background-position: -465px 0; width: 127px;}
+#navigation li.about.selected a {background-position: -465px -25px; width: 127px;}
+#navigation li.about:hover a {background-position: -465px -50px; width: 127px;}
+#navigation li.facebook {padding: 38px 0 38px 9px;}
+#navigation li.facebook a {width: 16px; background: transparent url(/img/bg_icons.png) no-repeat 0 -100px;}
+#navigation li.facebook.selected a {background-position: -50px -100px;}
+
+
+/*s-content.css*/
+#page {opacity: 0;}
+#header {}
+#footer {height: 15px;}
+#content {opacity: 0;}
+#content .mask {width: 100%;}
+#content .scene {z-index: 1; margin: 0 auto; width: 960px; position: relative; text-align: left;}
+#content .scene .prev {position: absolute; opacity: 0; width: 150px; height: 20px; top: 170px; z-index: 100; background: transparent url(/img/bg_bn_carousel.png) no-repeat right center; padding: 90px 50px 90px 0; overflow: hidden; cursor: pointer;
+	-webkit-transform: translate3d(0,0,0);
+}
+#content .scene .prev span {display: block; width: 150px; text-align: center; text-transform: uppercase;
+	font-family: "RockwellBold"; font-weight: normal; line-height: 18px;
+}
+#content .scene .next {position: absolute; opacity: 0; width: 150px; height: 20px; top: 170px; z-index: 100; background: transparent url(/img/bg_bn_carousel.png) no-repeat left center; padding: 90px 0 90px 50px; overflow: hidden; cursor: pointer;
+	-webkit-transform: translate3d(0,0,0);
+}
+#content .scene .next span {display: block; width: 150px; text-align: center; text-transform: uppercase;
+	font-family: "RockwellBold"; font-weight: normal; line-height: 18px;
+}
+
+
+/*s-cookiegates.css*/
+body.cookie {height: 100%;}
+.cookie #page {opacity: 1; background: transparent url(/img/bg_horizon.png) repeat-x 0px 120px;}
+.cookie #navigation li.front {width: 134px; text-indent: -9999px; background: transparent url(/img/bg_logo.png) no-repeat -1px 18px; height: 92px;}
+.cookie #content {opacity: 1;}
+.cookie #content .scene {margin: 0 auto; width: 960px; position: relative; text-align: center; height: 494px;}
+.cookie #content .scene .actions {text-align: center; display: block; background: transparent url(/img/bg_dot.png) no-repeat center 14px;}
+.cookie #content .scene .actions li {display: inline-block; margin: 0 29px; width: 68px; height: 38px; background: transparent url(/img/bg_bn.png) no-repeat top left;}
+.cookie #content .scene .actions li a {display: block; height: 18px; padding: 10px 0; overflow: hidden; color: #ffffff; text-transform: uppercase;
+	font-family: "RockwellBold"; font-weight: normal; line-height: 18px;
+}
+.cookie #content .scene .actions li a:hover {text-decoration: none;}
+.cookie #content .scene.agecheck {text-align: left;}
+.cookie #content .scene.agecheck h1 {padding: 253px 0 13px 285px; height: 38px; overflow: hidden; text-transform: uppercase; font-weight: normal; font-size: 38px; line-height: 40px;
+	font-family: "RockwellBold"; 
+}
+.cookie #content .scene.agecheck form {padding: 0 0 0 285px; font-size: 0;}
+.cookie #content .scene.agecheck h2 {font-size: 14px; font-weight: normal; padding: 0 0 9px;}
+.cookie #content .scene.agecheck h2 span {display: none;}
+.cookie #content .scene.agecheck h2.underage {display: none;}
+.cookie #content .scene.agecheck form.error h2 {color: #e60405;}
+.cookie #content .scene.agecheck form.error h2 span {display: inline; color: #e60405;}
+.cookie #content .scene.agecheck form.underage h2 {display: none; color: #e60405;}
+.cookie #content .scene.agecheck form.underage h2.underage {display: block;}
+.cookie #content .scene.agecheck fieldset {font-size: 0; display: inline-block; vertical-align: top;}
+.cookie #content .scene.agecheck .field {display: inline-block; vertical-align: top; padding: 0 9px 0 0;}
+.cookie #content .scene.agecheck .field label {display: none;}
+.cookie #content .scene.agecheck .field input {border: 1px solid #969797; border-radius: 3px; height: 20px; width: 50px; padding: 0 3px;
+	box-shadow: inset 0 2px 2px 0px #cccccc;
+}
+.cookie #content .scene.agecheck .field.error input,
+.cookie #content .scene.agecheck form.underage .field.error input {border-color: #e60405; color: #e60405;}
+.cookie #content .scene.agecheck .actions {display: inline-block; vertical-align: top; padding: 0;}
+.cookie #content .scene.agecheck .actions li.continue {margin: 0; height: 22px; width: auto; border-radius: 3px; background: #00a261;}
+.cookie #content .scene.agecheck .actions li.continue:hover {background: #000000;}
+.cookie #content .scene.agecheck form.error .actions li.continue,
+.cookie #content .scene.agecheck form.underage .actions li.continue,
+.cookie #content .scene.agecheck form.error .actions li.continue:hover
+.cookie #content .scene.agecheck form.underage .actions li.continue:hover {background-color: #a7a7a7;}
+.cookie #content .scene.agecheck .actions li.continue input {margin: 0; padding: 0 12px; border: none; text-transform: uppercase; background: transparent; color: #ffffff; font-size: 12px; font-weight: normal; cursor: pointer;
+	font-family: "RockwellBold";
+}
+.cookie #content .scene.cookiecheck h1 {padding: 185px 150px 30px; height: 58px; overflow: hidden; text-transform: uppercase;
+	font-family: "RockwellBold"; font-weight: normal; font-size: 38px; line-height: 40px;
+}
+.cookie #content .scene.cookiecheck p {padding: 0px 150px 30px; height: 18px; overflow: hidden;}
+.cookie #content .scene.cookiecheck p a {text-decoration: underline;}
+
+
+/*s-front.css*/
+#content.front .scene {font-size: 0;}
+#content.front .scene .beer {position: absolute; z-index: 10; background-repeat: no-repeat; background-position: 0 0; background-color: transparent;
+	width: 180px; height: 525px; 
+	left: 702px; top: 80px;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+#content.front .scene .stories {width: 960px; position: relative; height: 590px;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+#content.front .scene .stories li {width: 960px; height: 540px; position: absolute; top: 0; left: 0; text-indent: -9999px; z-index: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+#content.front .scene .stories li h3 {width: 960px; height: 540px; position: absolute; left: 0; top: 0px; text-indent: -9999px; overflow: hidden; cursor: pointer;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+#content.front .scene .stories li .reflection {width: 960px; height: 30px; position: absolute; left: 0; top: 540px;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+#content.front ul.bullets {position: absolute; top: 540px; left: -5px; overflow: hidden; z-index: 8;}
+#content.front ul.bullets li {padding: 10px 5px; float: left; width: 10px; height: 10px; background: transparent url(/img/bg_icons.png) no-repeat 5px 10px; cursor: pointer;}
+#content.front ul.bullets li:hover,
+#content.front ul.bullets li.selected {background-position: -45px 10px;}
+#content.front ul.bullets li:first-child {}
+#content.front .scene .campaign {display: inline-block; vertical-align: top; width: 340px; height: 117px; position: relative; z-index: 300;}
+#content.front .scene .campaign h2 {overflow: hidden; text-indent: -9999px; height: 50px; padding-bottom: 7px;
+}
+#content.front .scene .campaign a {text-decoration: underline;}
+#content.front .scene .campaign a,
+#content.front .scene .campaign p {font-size: 14px; line-height: 17px; font-family: Tahoma, Geneva, sans-serif;}
+#content.front .scene .campaign_a {background: transparent url(/img/hd_campaign_a.png) no-repeat top left;}
+#content.front .scene .campaign_b {background: transparent url(/img/hd_campaign_b.png) no-repeat top left;}
+#content.front .scene .beers {display: inline-block; vertical-align: top; height: 117px; width: 200px; padding: 0 40px;}
+#content.front .scene .beers a {display: block; height: 117px; background: transparent url(/img/bg_front_beers.png) no-repeat 0px 0px; text-indent: -9999px; overflow: hidden;}
+
+
+/*s-beers.css*/
+#content.beers .mask {background: transparent url(/img/bg_horizon.png) repeat-x 0px -40px;}
+#content.beers .scene {
+}
+#content.beers .scene .beer {width: 960px; height: 540px; position: relative; z-index: 10;}
+#content.beers .scene .beer .sponsorshiptext {position: absolute; left: 611px; top: 655px; width: 349px;
+	top: 320px;
+}
+#content.beers .scene .beer .sponsorshiptext h3 {font-size: 17px; line-height: 16px; padding: 0 0 2px; text-transform: uppercase;
+	font-family: "RockwellBold"; font-weight: normal;
+}
+#content.beers .scene .beer .main .sponsorshiptext .description {padding-left: 0;}
+#content.beers .scene .beer .main .sponsorshiptext .description p {font-size: 14px;}
+#content.beers .scene .beer .slides {z-index: 10; height: 540px; width: 960px; position: relative;}
+#content.beers .scene .beer .slides li {z-index: 1; height: 540px; width: 960px; position: absolute; top: 0; left: 0;}
+#content.beers .scene .beer .slides .main {}
+#content.beers .scene .beer .slides h1 {font-size: 22px; line-height: 25px; height: 25px; padding: 68px 0 0px 35px; width: 370px; text-transform: uppercase; overflow: hidden;
+	font-family: "RockwellBold"; font-weight: normal;
+}
+#content.beers .scene .beer .slides h2 {font-size: 60px; line-height: 60px; padding: 0 0 25px 35px; width: 370px; text-transform: uppercase;
+	font-family: "RockwellBold"; font-weight: normal;
+}
+#content.beers .scene .beer .slides .info {background: transparent url(/img/bg_icons.png) no-repeat 35px -50px; padding: 0 0 25px 35px; width: 30px; height: 24px; float: left; cursor: pointer;}
+#content.beers .scene .beer .slides .facebook {padding: 0 0 0 6px; position: absolute; bottom: 45px; left: 30px; overflow: hidden; width: 55px;}
+#content.beers .scene .beer .slides .description {clear: both; overflow: hidden; width: 320px; padding: 0 0 0 35px; overflow: hidden;}
+#content.beers .scene .beer .slides .description p {padding: 0 0 10px 0;}
+#content.beers .scene .beer .slides .description p a {text-decoration: underline;}
+#content.beers .scene .beer .slides .sponsorship {background-repeat: no-repeat; background-position: left -80px; background-color: transparent;}
+#content.beers .scene .beer .slides .sponsorship.spillesteder {background-image: url(/img/sponsorships/bg_spillesteder.png);}
+#content.beers .scene .beer .slides .sponsorship.festivaller {background-image: url(/img/sponsorships/bg_festivaller.png);}
+#content.beers .scene .beer .slides .sponsorship.groenkoncert {background-image: url(/img/sponsorships/bg_groenkoncert.png);}
+#content.beers .scene .beer .slides .sponsorship.roskildefestival {background-image: url(/img/sponsorships/bg_roskildefestival.png);}
+#content.beers .scene .beer .slides .sponsorship.copenhagenjazz {background-image: url(/img/sponsorships/bg_copenhagenjazz.png);}
+#content.beers .scene .beer .slides .sponsorship.aarhusfestuge {background-image: url(/img/sponsorships/bg_aarhusfestuge.png);}
+#content.beers .scene .beer .slides .sponsorship.mcsfightnight {background-image: url(/img/sponsorships/bg_mcsfightnight.png);}
+#content.beers .scene .beer .slides .sponsorship.copenhell {background-image: url(/img/sponsorships/bg_copenhell.png);}
+#content.beers .scene .beer .slides .sponsorship.distortion {background-image: url(/img/sponsorships/bg_distortion.png);}
+#content.beers .scene .beer .slides .sponsorship.tuborgsfoedselsdag {background-image: url(/img/sponsorships/bg_tuborgsfoedselsdag.png);}
+#content.beers .scene .beer .slides .sponsorship.jdag {background-image: url(/img/sponsorships/bg_jdag.png);}
+#content.beers .scene .beer .slides .sponsorship.sommer {background-image: url(/img/sponsorships/bg_sommer.png);}
+#content.beers .scene .beer .slides .sponsorship .actions {clear: both; padding: 20px 0 0 35px;}
+#content.beers .scene .beer .slides .sponsorship .actions li {position: static; width: auto; height: auto;}
+#content.beers .scene .beer .slides .sponsorship .actions li a {color: #ffffff; background-color: #1f1b13; padding: 6px 15px; border-radius: 3px; font-size: 14px; text-transform: uppercase;
+	font-family: "RockwellRegular"; font-weight: normal;
+}
+#content.beers .scene .beer .slides .sponsorship .actions li a:hover {text-decoration: none; color: #00a261;}
+#content.beers .scene .beer .sponsorships {z-index: 40; position: absolute; left: 595px; top: 370px; font-size: 0; width: 360px;}
+#content.beers .scene .beer .sponsorships .sponsorship {display: inline-block; width: 73px; height: 160px; vertical-align: top; cursor: pointer; margin: 0 0 0 11px; position: relative;}
+#content.beers .scene .beer .sponsorships .sponsorship .top {
+	position: absolute; top: 15px; left: 0; height: 101px; width: 73px;
+	background-image: url(/img/sponsorships/bg_sponsorships.png); background-repeat: no-repeat; background-color: transparent; 
+}
+#content.beers .scene .beer .sponsorships .sponsorship .bottom {
+	position: absolute; top: 116px; left: 0; height: 22px; width: 73px;
+	background-image: url(/img/sponsorships/bg_sponsorships.png); background-repeat: no-repeat; background-color: transparent; 
+}
+#content.beers .scene .beer .sponsorships .sponsorship.roskildefestival .top {background-position: 0 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.groenkoncert .top {background-position: -100px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.spillesteder .top {background-position: -300px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.festivaller .top {background-position: -200px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.distortion .top {background-position: -400px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.copenhell .top {background-position: -400px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.mcsfightnight .top {background-position: -500px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.copenhagenjazz .top {background-position: -600px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.aarhusfestuge .top {background-position: -700px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.tuborgsfoedselsdag .top {background-position: -800px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.jdag .top {background-position: -900px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.sommer .top {background-position: -1000px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.roskildefestival .bottom {background-position: 0 -124px;}
+#content.beers .scene .beer .sponsorships .sponsorship.groenkoncert .bottom {background-position: -100px -124px;}
+#content.beers .scene .beer .sponsorships .sponsorship.spillesteder .bottom {background-position: -300px -124px;}
+#content.beers .scene .beer .sponsorships .sponsorship.festivaller .bottom {background-position: -200px -124px;}
+#content.beers .scene .beer .sponsorships .sponsorship.distortion .bottom {background-position: -400px -124px;}
+#content.beers .scene .beer .sponsorships .sponsorship.copenhell .bottom {background-position: -400px -124px;}
+#content.beers .scene .beer .sponsorships .sponsorship.mcsfightnight .bottom {background-position: -500px -124px;}
+#content.beers .scene .beer .sponsorships .sponsorship.copenhagenjazz .bottom {background-position: -600px -124px;}
+#content.beers .scene .beer .sponsorships .sponsorship.aarhusfestuge .bottom {background-position: -700px -124px;}
+#content.beers .scene .beer .sponsorships .sponsorship.tuborgsfoedselsdag .bottom {background-position: -800px -124px;}
+#content.beers .scene .beer .sponsorships .sponsorship.jdag .bottom {background-position: -900px -124px;}
+#content.beers .scene .beer .sponsorships .sponsorship.sommer .bottom {background-position: -1000px -124px;}
+#content.beers .scene .beer .sponsorships .sponsorship .close {opacity: 0; position: absolute; top: 0; right: 0; height: 15px; width: 15px; background-image: url(/img/sponsorships/bg_sponsorships_close.png); background-repeat: no-repeat; background-color: transparent;}
+#content.beers .scene .beer .sponsorships .sponsorship.roskildefestival .close {background-position: 0 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.groenkoncert .close {background-position: -100px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.spillesteder .close {background-position: -300px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.festivaller .close {background-position: -200px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.distortion .close {background-position: -400px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.copenhell .close {background-position: -400px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.mcsfightnight .close {background-position: -500px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.copenhagenjazz .close {background-position: -600px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.aarhusfestuge .close {background-position: -700px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.tuborgsfoedselsdag .close {background-position: -800px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.jdag .close {background-position: -900px 0;}
+#content.beers .scene .beer .sponsorships .sponsorship.sommer .close {background-position: -1000px 0;}
+#content.beers .scene .beer .bottle {z-index: 50; position: absolute; background-position: center top; background-repeat: no-repeat; background-color: transparent;
+	width: 180px; height: 525px; 
+	left: 384px; top: 0px;
+}
+#content.beers .scene .beer .sponsorship_bottle {z-index: 55; position: absolute; background-position: center top; background-repeat: no-repeat; background-color: transparent;
+	width: 180px; height: 525px; 
+	left: 384px; top: 0px;
+}
+#content.beers .scene .beers {z-index: 60; position: fixed; left: 0; bottom: 0; width: 100%; height: 5px; background: transparent url(/img/bg_beers_crown.png) no-repeat center 10px; padding: 38px 0 0 0; overflow: hidden; cursor: pointer;}
+#content.beers .scene .beers ul {width: 100%; overflow: hidden; margin: 0 auto; background: #1f1b13; text-align: center; font-size: 0; padding: 25px 0 0 0;}
+#content.beers .scene .beers li {width: 100px; height: 23px; padding: 80px 0 0; display: inline-block; cursor: pointer; background-repeat: no-repeat; background-color: transparent; background-image: url(/img/bg_beers_small.png); background-position: center 4px; vertical-align: top;}
+#content.beers .scene .beers li a {color: #e7e7e7; text-decoration: none; text-transform: uppercase; font-size: 11px;
+	font-family: "RockwellRegular"; font-weight: normal;
+}
+#content.beers .scene .beers li:hover a {color: #00a261;}
+#content.beers .scene .beers li.selected a {color: #adacac;}
+#content.beers .scene .beers li.roedtuborg {background-position: center 4px;}
+#content.beers .scene .beers li.guldtuborg {background-position: center -96px;}
+#content.beers .scene .beers li.paaskebryg {background-position: center -196px;}
+#content.beers .scene .beers li.ff {background-position: center -296px;}
+#content.beers .scene .beers li.groentuborg {background-position: center -396px;}
+#content.beers .scene .beers li.julebryg {background-position: center -496px;}
+#content.beers .scene .beers li.classic {background-position: center -596px;}
+#content.beers .scene .beers li.superlight {background-position: center -696px;}
+#content.beers .scene .beers li.lime {background-position: center -796px;}
+#content.beers .scene .beers li.sommer {background-position: center -896px;}
+#content.beers .scene .beers li.ultra {background-position: center -996px;}
+
+
+/*s-stories.css*/
+#content.stories .mask {background: transparent url(/img/bg_horizon.png) repeat-x 0px 40px;}
+#content.stories .scene {position: relative;}
+#content.stories ul.bullets {position: absolute; top: 579px; left: 0; width: 960px; z-index: 8; font-size: 0; text-align: center;}
+#content.stories ul.bullets li {padding: 10px 5px; display: inline-block; width: 10px; height: 10px; background: transparent url(/img/bg_icons.png) no-repeat 5px 10px; cursor: pointer;}
+#content.stories ul.bullets li:hover,
+#content.stories ul.bullets li.selected {background-position: -45px 10px;}
+#content.stories ul.bullets li:first-child {}
+#content.stories .stories {position: relative; width: 960px; height: 640px;}
+#content.stories .stories li {position: absolute; top: 0; left: 0; background-position: top left; background-repeat: no-repeat;}
+#content.stories .story {width: 960px; height: 640px;}
+#content.stories .story h1,
+#content.stories .story h2 {text-transform: uppercase; width: 370px; overflow: hidden;
+	font-family: "RockwellBold"; font-weight: normal;
+}
+#content.stories .story h1 {font-size: 22px; line-height: 24px; padding: 96px 0 5px 35px; height: 24px;}
+#content.stories .story h2 {font-size: 60px; line-height: 60px; padding: 0 0 15px 35px;}
+#content.stories .story p {overflow: hidden; padding: 0 0 10px 35px; width: 320px;}
+#content.stories .story p a {text-decoration: underline;}
+
+/*s-ads.css*/
+#content.ads .scene {}
+#content.ads .video {background-color: transparent; background-repeat: no-repeat; background-position: top center; margin-bottom: 15px; position: relative; width: 960px; height: 540px;}
+#content.ads .video .play {z-index: 20; position: absolute; left: 50%; top: 50%; margin-left: -100px; margin-top: -77px; width: 200px; height: 34px; padding: 120px 0 0 0; display: block; background: transparent url(/img/bg_play_pause.png) no-repeat top center; font-size: 28px; color: #ffffff; text-transform: uppercase; text-align: center;
+	font-family: "RockwellBold"; font-weight: normal;
+}
+#content.ads .video .player {z-index: 30; position: absolute; width: 960px; height: 540px; background: #000000 url(/img/gx_loader.gif) no-repeat center 370px;}
+#content.ads .video .player video {width: 100%; height: 100%;}
+#content.ads .video .player .playpause {position: absolute; left: 50%; top: 50%; margin-left: -56px; margin-top: -56px; width: 112px; height: 112px; background: transparent url(/img/bg_play_pause.png) no-repeat 0 0;}
+#content.ads .video .player.playing .playpause {background-position: 0 -180px;}
+#content.ads .videos {overflow: hidden; margin-left: -15px;}
+#content.ads .videos li {position: relative; margin: 0 0 15px 15px; padding: 0; width: 310px; height: 175px; float: left; text-indent: -9999px; background-color: transparent; background-repeat: no-repeat; background-position: top right; cursor: pointer;}
+#content.ads .videos li a {position: absolute; left: 50%; top: 50%; margin-left: -56px; margin-top: -56px; width: 112px; height: 112px; display: block; background: transparent url(/img/bg_play_pause.png) no-repeat top left;}
+#content.ads .videos li.selected a {display: none;}
+#content.ads .facebook {text-align: right; font-size: 0; line-height: 0; margin-bottom: 58px; border-bottom: 4px solid #262117;}
+#content.ads .fb_like {overflow: hidden; display: inline-block; width: 51px; height: 35px;}
+#content.ads .classicsheader {position: absolute; left: 0; top: 840px; width: 310px;}
+#content.ads .classicsheader h2 {font-size: 22px; text-transform: uppercase; line-height: 24px;
+	font-family: "RockwellBold"; font-weight: normal;
+}
+#content.ads .classicsheader h3 {font-size: 64px; text-transform: uppercase; line-height: 56px;
+	font-family: "RockwellBold"; font-weight: normal;
+}
+#content.ads .classics {overflow: hidden; position: relative; height: 2450px;}
+#content.ads .classics li {width: 310px; position: absolute; cursor: pointer;}
+#content.ads .classics li a {display: block; text-indent: -9999px; height: 100%;}
+#content.ads .classics li.movie a {position: absolute; left: 50%; top: 50%; margin-left: -56px; margin-top: -56px; width: 112px; height: 112px; background: transparent url(/img/bg_play_pause.png) no-repeat top center;}
+#content.ads .classics li.heldigere {left: 0px; top: 189px; background-image: url(/img/adverts/nogle_er_heldigere_small.jpg); height: 440px;}
+#content.ads .classics li.byenstaarne {left: 0px; top: 644px; background-image: url(/img/adverts/byens_taarne_small.jpg); height: 418px;}
+#content.ads .classics li.toerstigemand {left: 0px; top: 1077px; background-image: url(/img/adverts/den_toerstige_mand_small.jpg); height: 418px;}
+#content.ads .classics li.classicoplukker {left: 0px; top: 1510px; background-image: url(/img/adverts/classic_oplukker_small.jpg); height: 453px;}
+#content.ads .classics li.unplugged {left: 0px; top: 1978px; background-image: url(/img/adverts/unplugged_small.jpg); height: 418px;}
+#content.ads .classics li.asta {left: 325px; top: 0px; background-image: url(/img/adverts/classic_asta_small.jpg); height: 453px;}
+#content.ads .classics li.sejl {left: 325px; top: 468px; background-image: url(/img/adverts/sejl_oplukker_small.jpg); height: 451px;}
+#content.ads .classics li.julebryg {left: 325px; top: 934px; background-image: url(/img/adverts/julebryg_small.jpg); height: 440px;}
+#content.ads .classics li.backstage {left: 325px; top: 1389px; background-image: url(/img/adverts/backstage_small.jpg); height: 418px;}
+#content.ads .classics li.groenkoncert {left: 325px; top: 1822px; background-image: url(/img/adverts/groen_koncert_small.jpg); height: 437px;}
+#content.ads .classics li.julebrygfilm {left: 650px; top: 0px; background-image: url(/img/adverts/julebryg_film_small.jpg); height: 174px;}
+#content.ads .classics li.julebrygfilm .player {width: 640px; height: 468px;}
+#content.ads .classics li.trae {left: 650px; top: 189px; background-image: url(/img/adverts/groen_trae_small.jpg); height: 418px;}
+#content.ads .classics li.guld1999 {left: 650px; top: 622px; background-image: url(/img/adverts/guld_1999_small.jpg); height: 456px;}
+#content.ads .classics li.udsolgt {left: 650px; top: 1093px; background-image: url(/img/adverts/udsolgt79_small.jpg); height: 418px;}
+#content.ads .classics li.tyvstart {left: 650px; top: 1526px; background-image: url(/img/adverts/tyvstart_1987_small.jpg); height: 418px;}
+#content.ads .classics li.groen50 {left: 650px; top: 1959px; background-image: url(/img/adverts/groen_50_small.jpg); height: 418px;}
+body.fullscreen {}
+#fullscreen {position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; z-index: 5; display: none; opacity: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+#fullscreen .ad {width: 100%; height: 100%; background-repeat: no-repeat; background-position: center center;}
+#fullscreen .prev {position: absolute; opacity: 0; width: 150px; height: 20px; top: 50%; margin-top: -100px; z-index: 100; background: transparent url(/img/bg_bn_carousel.png) no-repeat right center; padding: 90px 50px 90px 0; overflow: hidden; cursor: pointer;}
+#fullscreen .prev span {display: block; width: 150px; text-align: center; text-transform: uppercase;
+	font-family: "RockwellBold"; font-weight: normal; line-height: 18px;
+}
+#fullscreen .next {position: absolute; opacity: 0; width: 150px; height: 20px; top: 50%; margin-top: -100px; z-index: 100; background: transparent url(/img/bg_bn_carousel.png) no-repeat left center; padding: 90px 0 90px 50px; overflow: hidden; cursor: pointer;}
+#fullscreen .next span {display: block; width: 150px; text-align: center; text-transform: uppercase;
+	font-family: "RockwellBold"; font-weight: normal; line-height: 18px;
+}
+#fullscreen .zoom {z-index: 120; background: transparent url(/img/bg_bn_close.png) no-repeat 0 30px; width: 74px; height: 74px; cursor: pointer; position: absolute; right: 0; top: 0;}
+#fullscreen .ad .play {z-index: 20; position: absolute; left: 50%; top: 50%; margin-left: -100px; margin-top: -77px; width: 200px; height: 34px; padding: 120px 0 0 0; display: block; background: transparent url(/img/bg_play_pause.png) no-repeat top center; font-size: 28px; color: #ffffff; text-transform: uppercase; text-align: center; cursor: pointer;
+	font-family: "RockwellBold"; font-weight: normal;
+}
+#fullscreen .ad .player {z-index: 30; position: absolute; width: 960px; height: 540px; background: #000000 url(/img/gx_loader.gif) no-repeat center 370px;}
+#fullscreen .ad .player video {width: 100%; height: 100%;}
+#fullscreen .ad .player .playpause {position: absolute; left: 50%; top: 50%; margin-left: -56px; margin-top: -56px; width: 112px; height: 112px; background: transparent url(/img/bg_play_pause.png) no-repeat 0 0;}
+#fullscreen .ad .player.playing .playpause {background-position: 0 -180px;}
+
+
+/*s-tubklub.css*/
+#content.tubklub .mask {background: transparent url(/img/bg_horizon.png) repeat-x 0px 40px;}
+#content.tubklub .scene {background: transparent url(/img/bg_tubklub.png) no-repeat 0px 44px;}
+#content.tubklub .receipt,
+#content.tubklub .signup {}
+#content.tubklub h1,
+#content.tubklub .receipt,
+#content.tubklub .signup,
+#content.tubklub .facebook {margin-left: 374px;}
+#content.tubklub h1 {text-transform: uppercase; font-size: 63px; line-height: 58px; padding: 80px 0 0; height: 382px;
+	font-family: "RockwellBold"; font-weight: normal;
+}
+#content.tubklub .receipt {display: none;}
+#content.tubklub .signup {margin-right: 38px; border-bottom: 2px solid #c0c0b5; padding-bottom: 68px;}
+#content.tubklub .facebook {padding-bottom: 19px; border-bottom: 2px solid #c0c0b5; margin-bottom: 20px;}
+#content.tubklub .signup h3 {font-size: 33px; padding-bottom: 24px; 
+	font-family: "RockwellBold"; font-weight: normal;
+}
+#content.tubklub .signup h3, #content.tubklub .receipt h3,
+#content.tubklub .signup .button.submit,
+#content.tubklub .signup a.unsubscribe,
+#content.tubklub .facebook h2 {text-transform: uppercase;}
+#content.tubklub .signup p {padding: 0 35px 20px 0; width: 380px;}
+#content.tubklub .signup form {padding: 4px 0 0 0;}
+#content.tubklub .signup form .field {float: left; padding: 0 0 10px;}
+#content.tubklub .signup form .field.string input {border: none; background: transparent; border-bottom: 2px solid #c2c2b7; height: 20px; margin-right: 15px;}
+#content.tubklub .signup form .field label {padding-right: 4px;}
+#content.tubklub .signup form .field.string.focus input {border-bottom: 2px solid #000000;}
+#content.tubklub .signup form .field.string.error input {border-bottom: 2px solid #fd0000;}
+#content.tubklub .signup form .field input.text {width: 216px;}
+#content.tubklub .signup form .field input.email {margin-right: 0;}
+#content.tubklub .signup form .field input.address {width: 199px;}
+#content.tubklub .signup form .field input.zip {width: 40px;}
+#content.tubklub .signup form .field input.city {width: 125px; margin-right: 0;}
+#content.tubklub .signup form .field input.mobile {width: 200px;}
+#content.tubklub .signup h4 {font-weight: normal; width: 75px; float: left;}
+#content.tubklub .signup form .birth {padding: 30px 0 10px; clear: both; overflow: hidden;}
+#content.tubklub .signup form .birth .field {padding: 0; margin: 0 39px 10px 0;}
+#content.tubklub .signup form .birth .field label {padding-right: 7px;}
+#content.tubklub .signup form .birth .field select {width: 50px;}
+#content.tubklub .signup form .birth .field select.year {width: 100px;}
+#content.tubklub .signup form .birth .field.error {border-bottom: 2px solid #fd0000; margin-bottom: 8px;}
+#content.tubklub .signup form .gender {padding-bottom: 36px; clear: both; overflow: hidden;}
+#content.tubklub .signup form .gender .field {padding-bottom: 8px;}
+#content.tubklub .signup form .gender .field span {overflow: hidden; display: block; float: left; margin: 0 63px 2px 0;}
+#content.tubklub .signup form .gender .field.error span {border-bottom: 2px solid #fd0000; margin-bottom: 0px;}
+#content.tubklub .signup form .gender .field label {float: right; padding: 0 3px 0 0;}
+#content.tubklub .signup form .gender .field input {margin: 4px 4px 0 0; float: right;}
+#content.tubklub .signup .terms,
+#content.tubklub .signup .newsletter {height: 30px;}
+#content.tubklub .signup .newsletter {padding-bottom: 38px;}
+#content.tubklub .signup form .terms input,
+#content.tubklub .signup form .newsletter input {margin: 0 5px 0 0;}
+#content.tubklub .signup .terms label,
+#content.tubklub .signup .newsletter label {}
+#content.tubklub .signup .terms label a {text-decoration: underline;}
+#content.tubklub .signup form .terms .field {padding: 0; margin: 0 39px 10px 0;}
+#content.tubklub .signup form .terms .field.error {border-bottom: 2px solid #fd0000; margin-bottom: 8px;}
+#content.tubklub .signup .button.submit,
+#content.tubklub .signup a.unsubscribe {display: block; float: right; clear: both;}
+#content.tubklub .signup .button.submit {border: none; font-size: 21px; font-weight: bold; margin: 0 0 4px; width: auto; height: auto; background: transparent; cursor: pointer;
+	font-family: "RockwellBold"; font-weight: normal;
+}
+#content.tubklub .signup .button.submit:hover,
+#content.tubklub .signup a.unsubscribe:hover {color: #00a261; text-decoration: none;}
+#content.tubklub .signup a.unsubscribe {
+	font-family: "RockwellBold"; font-weight: normal;
+}
+#content.tubklub .facebook {background: transparent url(/img/bg_tubklub_fb.png) no-repeat 400px 45px; overflow: hidden;}
+#content.tubklub .facebook h2 {font-size: 62px; line-height: 56px; padding: 124px 0px 10px;
+	font-family: "RockwellBold"; font-weight: normal;
+}
+#content.tubklub .facebook p {width: 360px; padding-bottom: 48px;}
+#content.tubklub .facebook a {font-size: 18px; font-weight: bold; margin: 0 38px 20px 0; float: right; text-transform: uppercase; 
+	font-family: "RockwellBold"; font-weight: normal;
+}
+#content.tubklub .facebook a:hover {color: #00a261; text-decoration: none;}
+
+/*s-about.css*/
+#content.about .mask {background: transparent url(/img/bg_horizon.png) repeat-x 0px 40px;}
+#content.about .abouttuborg {height: 547px; background: transparent url(/img/bg_about.png) no-repeat 416px 92px; padding: 93px 0 90px;}
+#content.about .abouttuborg h1 {height: 106px; background: transparent url(/img/hd_danskernes.png) no-repeat 0 32px; overflow: hidden; text-indent: -9999px;}
+#content.about .abouttuborg p {width: 333px; padding-bottom: 32px;}
+#content.about .readmore a {color: #ffffff; background-color: #1f1b13; padding: 6px 15px; border-radius: 3px; font-size: 14px; text-transform: uppercase; font-family: "RockwellRegular";}
+#content.about .readmore a:hover {text-decoration: none; color: #00a261;}
+#content.about .fondet {height: 473px; background: transparent url(/img/bg_about_fondet.png) no-repeat 0px 0px;}
+#content.about .fondet h2 {height: 102px; background: transparent url(/img/hd_tuborgfondet.png) no-repeat 39px 60px; overflow: hidden; text-indent: -9999px;}
+#content.about .fondet p {width: 410px; padding-bottom: 32px; color: #ffffff; padding-left: 34px;}
+#content.about .fondet .readmore,
+#content.about .fondet p {padding-left: 39px;}
+#content.about .address {float: left; width: 300px;}
+#content.about .address .country-name {display: none;}
+#content.about .address .tel,
+#content.about .address .fax {display: inline;}
+#content.about .contact,
+#content.about .jobs {padding-bottom: 95px;}
+#content.about .contact {width: 652px; display: inline-block; float: left; padding-left: 40px;}
+#content.about .contact * {font-family: "RockwellRegular";}
+#content.about .contact h3,
+#content.about .jobs h3 {font-size: 21px; padding-bottom: 18px; text-transform: uppercase;
+	font-family: "RockwellBold"; font-weight: normal;
+}
+#content.about .jobs {width: 248px; display: inline-block; padding-right: 20px;}
+#content.about .jobs p {padding-bottom: 32px; font-family: "RockwellRegular";}
+
+
+/*s-facebook.css*/
+#content.facebook .scene {background: transparent url(/img/bg_tubklub_fb.png) no-repeat 0px 35px; overflow: hidden;}
+#content.facebook .pages {overflow: hidden; padding: 35px 0 0 320px;}
+#content.facebook .pages li {float: right; width: 320px; height: 350px;}
+#content.facebook .pages li h3 a {display: block; width: 100px; height: 88px; text-indent: -9999px; background-repeat: none; background-image: url(/img/bg_beers_facebook.png); background-color: transparent;}
+#content.facebook .pages li .iframe {background: white; height: 215px; width: 292px;}
+#content.facebook .pages li.tuborg h3 a {background-position: -100px 0;}
+#content.facebook .pages li.classic h3 a {background-position: 0px 0;}
+#content.facebook .pages li.guld h3 a {background-position: -200px 0;}
+#content.facebook .pages li.jylebryg h3 a {background-position: -300px 0;}
+#content.facebook .pages li.paaske h3 a {background-position: -400px 0;}
+#content.facebook .pages li.ultra h3 a {background-position: -500px 0;}
+
+
+/*s-terms.css*/
+.terms #page {opacity: 1;}
+.terms #header .servicenavigation .close {z-index: 120; background: transparent url(/img/bg_bn_close.png) no-repeat 0 30px; width: 74px; height: 74px; cursor: pointer; position: absolute; right: 0; top: 0;}
+.terms #header .servicenavigation .close a {height: 74px; display: block; text-indent: -9999px;}
+.terms #navigation li.front {width: 134px; text-indent: -9999px; background: transparent url(/img/bg_logo.png) no-repeat -1px 18px; height: 92px;}
+.terms #content {opacity: 1;}
+.terms #content h1 {font-size: 22px; line-height: 25px; padding: 68px 0 40px 35px; text-transform: uppercase; overflow: hidden;
+	font-family: "RockwellBold"; font-weight: normal;
+}
+.terms #content h2 {padding: 0 0 10px 35px; font-size: 18px;}
+.terms #content h3 {padding: 0 0 10px 35px; font-size: 14px;}
+.terms #content p {line-height: 18px; font-size: 14px; padding: 0 0 10px 35px;}
+.terms #content a {text-decoration: underline;}
+
+/*s-temp.css*/
+

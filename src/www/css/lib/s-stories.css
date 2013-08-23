@@ -1,0 +1,26 @@
+
+/* Stories */
+#content.stories .mask {background: transparent url(/img/bg_horizon.png) repeat-x 0px 40px;}
+#content.stories .scene {position: relative;}
+
+#content.stories ul.bullets {position: absolute; top: 579px; left: 0; width: 960px; z-index: 8; font-size: 0; text-align: center;}
+#content.stories ul.bullets li {padding: 10px 5px; display: inline-block; width: 10px; height: 10px; background: transparent url(/img/bg_icons.png) no-repeat 5px 10px; cursor: pointer;}
+#content.stories ul.bullets li:hover,
+#content.stories ul.bullets li.selected {background-position: -45px 10px;}
+#content.stories ul.bullets li:first-child {}
+
+
+#content.stories .stories {position: relative; width: 960px; height: 640px;}
+#content.stories .stories li {position: absolute; top: 0; left: 0; background-position: top left; background-repeat: no-repeat;}
+
+#content.stories .story {width: 960px; height: 640px;}
+
+#content.stories .story h1,
+#content.stories .story h2 {text-transform: uppercase; width: 370px; overflow: hidden;
+	font-family: "RockwellBold"; font-weight: normal;
+}
+#content.stories .story h1 {font-size: 22px; line-height: 24px; padding: 96px 0 5px 35px; height: 24px;}
+#content.stories .story h2 {font-size: 60px; line-height: 60px; padding: 0 0 15px 35px;}
+
+#content.stories .story p {overflow: hidden; padding: 0 0 10px 35px; width: 320px;}
+#content.stories .story p a {text-decoration: underline;}

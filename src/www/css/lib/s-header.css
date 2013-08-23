@@ -1,0 +1,5 @@
+#header {position: relative; width: 960px; margin: 0 auto; z-index: 50;}
+#header .servicenavigation {position: absolute; top: 0; right: 0; z-index: 100;}
+#header .servicenavigation li.terms {background: transparent; padding: 3px 0 5px;}
+#header .servicenavigation li.terms h4 {line-height: 10px;}
+#header .servicenavigation li.terms a {color: #a7a7a7; font-size: 10px; font-weight: normal; line-height: 10px; text-decoration: underline;}

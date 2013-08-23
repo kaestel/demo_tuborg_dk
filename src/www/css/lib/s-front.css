@@ -1,0 +1,46 @@
+#content.front .scene {font-size: 0;}
+
+#content.front .scene .beer {position: absolute; z-index: 10; background-repeat: no-repeat; background-position: 0 0; background-color: transparent;
+	width: 180px; height: 525px; 
+	left: 702px; top: 80px;
+	
+	-webkit-transform: translate3d(0, 0, 0);
+}
+
+#content.front .scene .stories {width: 960px; position: relative; height: 590px;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+#content.front .scene .stories li {width: 960px; height: 540px; position: absolute; top: 0; left: 0; text-indent: -9999px; z-index: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+#content.front .scene .stories li h3 {width: 960px; height: 540px; position: absolute; left: 0; top: 0px; text-indent: -9999px; overflow: hidden; cursor: pointer;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+#content.front .scene .stories li .reflection {width: 960px; height: 30px; position: absolute; left: 0; top: 540px;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+
+
+#content.front ul.bullets {position: absolute; top: 540px; left: -5px; overflow: hidden; z-index: 8;}
+#content.front ul.bullets li {padding: 10px 5px; float: left; width: 10px; height: 10px; background: transparent url(/img/bg_icons.png) no-repeat 5px 10px; cursor: pointer;}
+#content.front ul.bullets li:hover,
+#content.front ul.bullets li.selected {background-position: -45px 10px;}
+#content.front ul.bullets li:first-child {}
+
+
+#content.front .scene .campaign {display: inline-block; vertical-align: top; width: 340px; height: 117px; position: relative; z-index: 300;}
+#content.front .scene .campaign h2 {overflow: hidden; text-indent: -9999px; height: 50px; padding-bottom: 7px;
+
+/*	font-family: "RockwellBold"; font-weight: normal;*/
+}
+
+#content.front .scene .campaign a {text-decoration: underline;}
+#content.front .scene .campaign a,
+#content.front .scene .campaign p {font-size: 14px; line-height: 17px; font-family: Tahoma, Geneva, sans-serif;}
+
+#content.front .scene .campaign_a {background: transparent url(/img/hd_campaign_a.png) no-repeat top left;}
+#content.front .scene .campaign_b {background: transparent url(/img/hd_campaign_b.png) no-repeat top left;}
+
+
+#content.front .scene .beers {display: inline-block; vertical-align: top; height: 117px; width: 200px; padding: 0 40px;}
+#content.front .scene .beers a {display: block; height: 117px; background: transparent url(/img/bg_front_beers.png) no-repeat 0px 0px; text-indent: -9999px; overflow: hidden;}

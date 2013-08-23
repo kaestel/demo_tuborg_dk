@@ -1,0 +1,106 @@
+
+/* TUBKLUB */
+#content.tubklub .mask {background: transparent url(/img/bg_horizon.png) repeat-x 0px 40px;}
+#content.tubklub .scene {background: transparent url(/img/bg_tubklub.png) no-repeat 0px 44px;}
+
+#content.tubklub .receipt,
+#content.tubklub .signup {}
+
+#content.tubklub h1,
+#content.tubklub .receipt,
+#content.tubklub .signup,
+#content.tubklub .facebook {margin-left: 374px;}
+#content.tubklub h1 {text-transform: uppercase; font-size: 63px; line-height: 58px; padding: 80px 0 0; height: 382px;
+	font-family: "RockwellBold"; font-weight: normal;
+}
+
+#content.tubklub .receipt {display: none;}
+
+
+#content.tubklub .signup {margin-right: 38px; border-bottom: 2px solid #c0c0b5; padding-bottom: 68px;}
+#content.tubklub .facebook {padding-bottom: 19px; border-bottom: 2px solid #c0c0b5; margin-bottom: 20px;}
+
+#content.tubklub .signup h3 {font-size: 33px; padding-bottom: 24px; 
+	font-family: "RockwellBold"; font-weight: normal;
+}
+#content.tubklub .signup h3, #content.tubklub .receipt h3,
+#content.tubklub .signup .button.submit,
+#content.tubklub .signup a.unsubscribe,
+#content.tubklub .facebook h2 {text-transform: uppercase;}
+
+#content.tubklub .signup p {padding: 0 35px 20px 0; width: 380px;}
+
+#content.tubklub .signup form {padding: 4px 0 0 0;}
+
+#content.tubklub .signup form .field {float: left; padding: 0 0 10px;}
+
+#content.tubklub .signup form .field.string input {border: none; background: transparent; border-bottom: 2px solid #c2c2b7; height: 20px; margin-right: 15px;}
+#content.tubklub .signup form .field label {padding-right: 4px;}
+
+#content.tubklub .signup form .field.string.focus input {border-bottom: 2px solid #000000;}
+#content.tubklub .signup form .field.string.error input {border-bottom: 2px solid #fd0000;}
+
+#content.tubklub .signup form .field input.text {width: 216px;}
+#content.tubklub .signup form .field input.email {margin-right: 0;}
+#content.tubklub .signup form .field input.address {width: 199px;}
+#content.tubklub .signup form .field input.zip {width: 40px;}
+#content.tubklub .signup form .field input.city {width: 125px; margin-right: 0;}
+#content.tubklub .signup form .field input.mobile {width: 200px;}
+
+
+
+
+#content.tubklub .signup h4 {font-weight: normal; width: 75px; float: left;}
+
+#content.tubklub .signup form .birth {padding: 30px 0 10px; clear: both; overflow: hidden;}
+#content.tubklub .signup form .birth .field {padding: 0; margin: 0 39px 10px 0;}
+#content.tubklub .signup form .birth .field label {padding-right: 7px;}
+#content.tubklub .signup form .birth .field select {width: 50px;}
+#content.tubklub .signup form .birth .field select.year {width: 100px;}
+#content.tubklub .signup form .birth .field.error {border-bottom: 2px solid #fd0000; margin-bottom: 8px;}
+
+#content.tubklub .signup form .gender {padding-bottom: 36px; clear: both; overflow: hidden;}
+#content.tubklub .signup form .gender .field {padding-bottom: 8px;}
+#content.tubklub .signup form .gender .field span {overflow: hidden; display: block; float: left; margin: 0 63px 2px 0;}
+#content.tubklub .signup form .gender .field.error span {border-bottom: 2px solid #fd0000; margin-bottom: 0px;}
+#content.tubklub .signup form .gender .field label {float: right; padding: 0 3px 0 0;}
+#content.tubklub .signup form .gender .field input {margin: 4px 4px 0 0; float: right;}
+
+#content.tubklub .signup .terms,
+#content.tubklub .signup .newsletter {height: 30px;}
+#content.tubklub .signup .newsletter {padding-bottom: 38px;}
+
+#content.tubklub .signup form .terms input,
+#content.tubklub .signup form .newsletter input {margin: 0 5px 0 0;}
+#content.tubklub .signup .terms label,
+#content.tubklub .signup .newsletter label {}
+
+#content.tubklub .signup .terms label a {text-decoration: underline;}
+
+#content.tubklub .signup form .terms .field {padding: 0; margin: 0 39px 10px 0;}
+#content.tubklub .signup form .terms .field.error {border-bottom: 2px solid #fd0000; margin-bottom: 8px;}
+
+
+#content.tubklub .signup .button.submit,
+#content.tubklub .signup a.unsubscribe {display: block; float: right; clear: both;}
+
+#content.tubklub .signup .button.submit {border: none; font-size: 21px; font-weight: bold; margin: 0 0 4px; width: auto; height: auto; background: transparent; cursor: pointer;
+	font-family: "RockwellBold"; font-weight: normal;
+}
+#content.tubklub .signup .button.submit:hover,
+#content.tubklub .signup a.unsubscribe:hover {color: #00a261; text-decoration: none;}
+
+#content.tubklub .signup a.unsubscribe {
+	font-family: "RockwellBold"; font-weight: normal;
+}
+
+#content.tubklub .facebook {background: transparent url(/img/bg_tubklub_fb.png) no-repeat 400px 45px; overflow: hidden;}
+#content.tubklub .facebook h2 {font-size: 62px; line-height: 56px; padding: 124px 0px 10px;
+	font-family: "RockwellBold"; font-weight: normal;
+}
+#content.tubklub .facebook p {width: 360px; padding-bottom: 48px;}
+#content.tubklub .facebook a {font-size: 18px; font-weight: bold; margin: 0 38px 20px 0; float: right; text-transform: uppercase; 
+	font-family: "RockwellBold"; font-weight: normal;
+}
+
+#content.tubklub .facebook a:hover {color: #00a261; text-decoration: none;}
