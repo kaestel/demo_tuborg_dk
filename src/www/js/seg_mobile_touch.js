@@ -1,9 +1,11 @@
 
+/*u.js*/
 var u, Util = u = new function() {}
 u.version = 5;
 u.bug = function() {}
 u.stats = new function() {this.pageView = function(){};this.event = function(){};this.customVar = function(){}}
 
+/*u-debug.js*/
 Util.testURL = function(url) {
 	return true;
 	return document.domain.match(/.local$|^w\./);
@@ -110,6 +112,7 @@ Util.listObjectContent = function(object) {
 Util.nodeId = function(node) {
 	return node.id ? node.id : (node.className ? node.className : (node.name ? node.name : node.nodeName));
 }
+/*u-animation.js*/
 Util.Animation = u.a = new function() {
 	this.support = function() {
 		var node = document.createElement("div");
@@ -240,6 +243,7 @@ Util.Animation = u.a = new function() {
 	}
 }
 
+/*u-dom.js*/
 Util.getElement = u.ge = function(identifier, target) {
 	var e, i, regexp, t;
 	t = target ? target : document;
@@ -484,6 +488,7 @@ Util.wrapElement = u.we = function(e, wrap, attributes) {
 	return wrap;
 }
 
+/*u-events.js*/
 Util.Events = u.e = new function() {
 	this.event_pref = typeof(document.ontouchmove) == "undefined" ? "mouse" : "touch";
 	this.kill = function(event) {
@@ -934,6 +939,7 @@ Util.Events = u.e = new function() {
 	}
 }
 
+/*u-form.js*/
 Util.Form = u.f = new function() {
 	this.init = function(form) {
 		var i, o;
@@ -1427,6 +1433,7 @@ u.f.recurseName = function(object, indexes, value) {
 	}
 	return object;
 }
+/*u-hash.js*/
 Util.Hash = u.h = new function() {
 	this.catchEvent = function(callback, node) {
 		this.node = node;
@@ -1495,6 +1502,7 @@ Util.Hash = u.h = new function() {
 	}
 }
 
+/*u-image.js*/
 Util.Image = u.i = new function() {
 	this.load = function(e, src) {
 		var image = new Image();
@@ -1520,6 +1528,7 @@ Util.Image = u.i = new function() {
 	}
 }
 
+/*u-link.js*/
 Util.link = function(e) {
 	var a = (e.nodeName.toLowerCase() == "a" ? e : u.qs("a", e));
 	u.addClass(e, "link");
@@ -1528,6 +1537,7 @@ Util.link = function(e) {
 	u.e.click(e);
 }
 
+/*u-position.js*/
 Util.absoluteX = u.absX = function(e) {
 	if(e.offsetParent) {
 		return e.offsetLeft + u.absX(e.offsetParent);
@@ -1595,6 +1605,7 @@ Util.pageScrollY = u.scrollY = function() {
 	return window.pageYOffset;
 }
 
+/*u-request.js*/
 Util.createRequestObject = function(type) {
 	var request_object = false;
 		try {
@@ -1759,6 +1770,7 @@ Util.validateResponse = function(response){
 	}
 }
 
+/*u-string.js*/
 Util.cutString = function(string, length) {
 	var matches, i;
 	if(string.length <= length) {
@@ -1819,6 +1831,7 @@ Util.stringOr = function(value, replacement) {
 		return replacement ? replacement : "";
 	}	
 }
+/*u-system.js*/
 Util.explorer = function(version, scope) {
 	if(document.all) {
 		var undefined;
@@ -1901,6 +1914,7 @@ Util.osx = function() {
 	return (navigator.userAgent.indexOf("OS X") >= 0) ? true : false;
 }
 
+/*u-timer.js*/
 Util.Timer = u.t = new function() {
 	this.actions = new Array();
 	this.objects = new Array();
@@ -1944,6 +1958,7 @@ Util.Timer = u.t = new function() {
 	}
 }
 
+/*u-init-static.js*/
 Util.Objects = u.o = new Object();
 Util.init = function(scope) {
 	var i, e, elements, ij_value;
@@ -1959,6 +1974,7 @@ Util.init = function(scope) {
 	}
 }
 
+/*u-video.js*/
 Util.videoPlayer = function() {
 	var player = document.createElement("div");
 	u.ac(player, "player");
@@ -2220,6 +2236,7 @@ Util.videoPlayer = function() {
 	u.e.addEvent(player, "mousemove", player.showControls);
 	return player;
 }
+/*i-page.js*/
 Util.Objects["page"] = new function() {
 	this.init = function(page, event) {
 		if(!page.initialized && u.hc(page, "i:page")) {
@@ -2411,6 +2428,7 @@ Util.Objects["page"] = new function() {
 }
 u.e.addEvent(window, "load", function(event) {u.o.page.init(u.qs("#page"), event);})
 
+/*i-content.js*/
 Util.Objects["content"] = new function() {
 	this.init = function(scene) {
 		scene.page = u.qs("#page");
@@ -2426,6 +2444,7 @@ Util.Objects["content"] = new function() {
 	}
 }
 
+/*i-front.js*/
 Util.Objects["front"] = new function() {
 	this.init = function(scene) {
 		scene.page = u.qs("#page");
@@ -2742,6 +2761,7 @@ Util.Objects["front"] = new function() {
 	}
 }
 
+/*i-beers.js*/
 Util.Objects["beers"] = new function() {
 	this.init = function(scene) {
 		var i, beer;
@@ -3339,6 +3359,7 @@ Util.Objects["beer"] = new function() {
 		beer.selectNode(0);
 	}
 }
+/*i-stories.js*/
 Util.Objects["stories"] = new function() {
 	this.init = function(scene) {
 		scene.page = u.qs("#page");
@@ -3602,6 +3623,7 @@ Util.Objects["story"] = new function() {
 	}
 }
 
+/*i-ads.js*/
 Util.Objects["ads"] = new function() {
 	this.init = function(scene) {
 		var i, node;
@@ -3934,6 +3956,7 @@ Util.Objects["ads"] = new function() {
 	}
 }
 
+/*i-about.js*/
 Util.Objects["about"] = new function() {
 	this.init = function(scene) {
 		scene.page = u.qs("#page");
@@ -3957,6 +3980,7 @@ Util.Objects["about"] = new function() {
 	}
 }
 
+/*i-tubklub.js*/
 Util.Objects["tubklub"] = new function() {
 	this.init = function(scene) {
 		scene.page = u.qs("#page");
@@ -3974,16 +3998,7 @@ Util.Objects["tubklub"] = new function() {
 		scene._form.scene = scene;
 		u.f.init(scene._form);
 		scene._form.submitted = function() {
-			this.Response = function(response) {
-				var content = u.qs("#content", response);
-				if(content) {
-					u.qs(".signup", this.scene).innerHTML = content.innerHTML;
-				}
-				else {
-					u.qs(".signup", this.scene).innerHTML = "<p>Unknown error</p>";
-				}
-			}
-			u.Request(this, this.action, u.f.getParams(this), this.method);
+			alert("Disabled for demo");
 		}
 		scene.loaded = function(event) {
 			this.loaded = function(event) {
@@ -3995,6 +4010,7 @@ Util.Objects["tubklub"] = new function() {
 	}
 }
 
+/*i-agecheck.js*/
 Util.Objects["agecheck"] = new function() {
 	this.init = function(form) {
 		u.f.init(form);
@@ -4100,6 +4116,7 @@ Util.Objects["agecheck"] = new function() {
 		}
 	}
 }
+/*i-facebook.js*/
 Util.Objects["facebook"] = new function() {
 	this.init = function(scene) {
 		scene.page = u.qs("#page");
@@ -4109,11 +4126,6 @@ Util.Objects["facebook"] = new function() {
 		scene.mask.page = scene.page;
 		scene.go = function() {
 			var i, facebook_page;
-			this.pages = u.qsa(".pages li", this);
-			for(i = 0; facebook_page = this.pages[i]; i++) {
-				var url = u.qs("a", facebook_page).href;
-				u.qs(".iframe", facebook_page).innerHTML += '<iframe src="//www.facebook.com/plugins/likebox.php?href=' + url + '&amp;width=292&amp;height=215&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;header=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:215px;" allowTransparency="true"></iframe>';
-			}
 		}
 		scene.ready = function() {
 				u.ac(this.page.cN, "ready");
@@ -4123,8 +4135,10 @@ Util.Objects["facebook"] = new function() {
 	}
 }
 
+/*ga.js*/
 u.ga_account = 'UA-6433791-1';
 
+/*u-googleanalytics.js*/
 if(u.ga_account) {
 	var _gaq = _gaq || [];
 	_gaq.push(['_setAccount', u.ga_account]);

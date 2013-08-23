@@ -1,4 +1,5 @@
 
+/*u.js*/
 var u, Util = u = new function() {}
 u.version = 5;
 u.bug = function() {}

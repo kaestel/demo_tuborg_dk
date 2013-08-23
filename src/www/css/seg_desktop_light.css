@@ -509,6 +509,12 @@ body.fullscreen {}
 #content.facebook .pages li.jylebryg h3 a {background-position: -300px 0;}
 #content.facebook .pages li.paaske h3 a {background-position: -400px 0;}
 #content.facebook .pages li.ultra h3 a {background-position: -500px 0;}
+#content.facebook .pages li.tuborg .iframe {background: transparent url(/img/facebook/tuborg.png) no-repeat top left;}
+#content.facebook .pages li.classic .iframe {background: transparent url(/img/facebook/classic.png) no-repeat top left;}
+#content.facebook .pages li.guld .iframe {background: transparent url(/img/facebook/guld.png) no-repeat top left;}
+#content.facebook .pages li.jylebryg .iframe {background: transparent url(/img/facebook/julebryg.png) no-repeat top left;}
+#content.facebook .pages li.paaske .iframe {background: transparent url(/img/facebook/paaske.png) no-repeat top left;}
+#content.facebook .pages li.ultra .iframe {background: transparent url(/img/facebook/ultra.png) no-repeat top left;}
 
 
 /*s-terms.css*/
